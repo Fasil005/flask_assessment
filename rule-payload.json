@@ -1,0 +1,192 @@
+{
+	"ruleName": "Car loan",
+	"numerical": [
+		{
+			"variable": "Loan application amount",
+			"type": "numerical",
+			"categoryCount": "4",
+			"rank": [
+				1,
+				2,
+				3,
+				4
+			],
+			"threshold": [
+				1000,
+				2000,
+				3000
+			],
+			"subscore": [
+				100,
+				150,
+				200,
+				250
+			],
+			"weight": [
+				20,
+				30,
+				25,
+				25
+			],
+			"description": [
+				"<1000",
+				"1000-2000",
+				"2000-3000",
+				">3000"
+			],
+			"key": 1
+		},
+		{
+			"variable": "Years in current occupation",
+			"type": "numerical",
+			"categoryCount": "3",
+			"rank": [
+				1,
+				2,
+				3
+			],
+			"threshold": [
+				4,
+				10
+			],
+			"subscore": [
+				200,
+				250,
+				300
+			],
+			"weight": [
+				10,
+				20,
+				70
+			],
+			"description": [
+				"<4",
+				"4-10",
+				">10"
+			],
+			"key": 1
+		}
+	],
+	"categories": [
+		{
+			"variable": "Occupation",
+			"type": "category",
+			"rank": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			],
+			"categoriesList": [
+				"Doctor",
+				"Government employee",
+				"Lawyer",
+				"Other professional",
+				"Private sector employee",
+				"Self-employed"
+			],
+			"subscore": [
+				100,
+				150,
+				200,
+				250,
+				300,
+				300
+			],
+			"weight": [
+				10,
+				20,
+				30,
+				10,
+				20,
+				10
+			],
+			"description": [
+				"Doctor",
+				"Government employee",
+				"Lawyer",
+				"Other professional",
+				"Private sector employee",
+				"Self-employed"
+			],
+			"key": 1
+		},
+		{
+			"variable": "Type of residence",
+			"type": "category",
+			"rank": [
+				1,
+				2,
+				3,
+				4,
+				5
+			],
+			"categoriesList": [
+				"Shared accommodation",
+				"Rented",
+				"Company flat",
+				"Partly-owned",
+				"Parental"
+			],
+			"subscore": [
+				100,
+				150,
+				200,
+				250,
+				300
+			],
+			"weight": [
+				10,
+				20,
+				30,
+				10,
+				30
+			],
+			"description": [
+				"Shared accommodation",
+				"Rented",
+				"Company flat",
+				"Partly-owned",
+				"Parental"
+			],
+			"key": 2
+		},
+		{
+			"variable": "Eduction",
+			"type": "category",
+			"rank": [
+				1,
+				2,
+				3,
+				4
+			],
+			"categoriesList": [
+				"Graduate",
+				"High School",
+				"Post graduate",
+				"Graduate Technical"
+			],
+			"subscore": [
+				100,
+				150,
+				200,
+				250
+			],
+			"weight": [
+				10,
+				20,
+				30,
+				40
+			],
+			"description": [
+				"Graduate",
+				"High School",
+				"Post graduate",
+				"Graduate Technical"
+			],
+			"key": 3
+		}
+	]
+}

@@ -1,0 +1,63 @@
+[
+	  {
+		"eligibilityJson":{
+			"categories": [
+			  {
+				"variable": "Occupation",
+				"type": "category",
+				"categoriesList": [
+				  "Doctor",
+				  "Government employee",
+				  "Lawyer",
+				  "Other professional",
+				  "Private sector employee",
+				  "Self-employed"
+				  
+				],
+				"key": 1
+			  },
+			  {
+				"variable": "Education",
+				"type": "category",
+				"categoriesList": [
+				  "Graduate",
+				  "High School",
+				  "Post graduate",
+				  "Graduate Technical"
+				],
+				"key": 2
+			  }
+			],
+			"numerical": [
+			  {
+				"variable": "Years in current occupation",
+				"type": "numerical",
+				"operatorType": "single",
+				"operator": ">=",
+				"value": 3,
+				"key": 1
+			  },
+			  {
+				"variable": "Loan application amount",
+				"type": "numerical",
+				"operatorType": "range",
+				"operator": "< X =<",
+				"lValue": 2000,
+				"rValue": 4000,
+				"key": 2
+			  },
+			  {
+				"variable": "Collateral",
+				"type": "numerical",
+				"operatorType": "range",
+				"operator": ">= X >",
+				"lValue": 4000,
+				"rValue": 2000,
+				"key": 3
+			  }
+			]
+		},
+		"eligibilityName": "Car loan",
+		"projectId": 5
+	  }
+]
